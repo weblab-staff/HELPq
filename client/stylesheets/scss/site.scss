@@ -38,6 +38,19 @@ html {
   height: 100%;
 }
 
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: normal;
+  src: url(/assets/fonts/AvenirNext-Regular.woff);
+ }
+
+@font-face {
+  font-family: "Avenir Next";
+  font-weight: 500;
+  src: url(/assets/fonts/AvenirNext-Medium.woff); 
+}
+
+
 // Layout
 @import 'layouts/bannerLayout';
 
