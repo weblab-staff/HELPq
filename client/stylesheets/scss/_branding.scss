@@ -7,8 +7,11 @@
 // danger: generally some sort of red to indicate danger
 //------------------------------
 
+$brand-bg: #396dff;
+
 // Primary color of your brand (Used for primary buttons, glows, etc.)
-$brand-primary: #396dff;
+// making this the same as secondary for now
+$brand-primary: #0a369d; 
 
 // Secondary color of your brand (used for secondary buttons)
 $brand-secondary: #0a369d;
@@ -82,7 +85,7 @@ $github-gray: #e4e4e4;
   // background-size: cover;
 
   // Background image that repeats
-  background: url(/assets/images/geometry2.png) repeat;
+  background-color: $brand-bg;
 }
 
 
@@ -99,7 +102,7 @@ $github-gray: #e4e4e4;
   // background: $brand-primary;
 
   // Repeated Background:
-  background: url(/assets/images/geometry2.png) repeat;
+  background-color: $brand-bg;
 }
 
 // Footer, which appears on each page.
