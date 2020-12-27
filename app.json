@@ -19,7 +19,6 @@
         "SETTINGS_QUEUE_ENABLED": "true"
     },
     "addons": [
-        "mongolab"
     ],
     "buildpacks": [
         {
