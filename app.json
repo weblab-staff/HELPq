@@ -3,6 +3,7 @@
     "description": "An extensible, customizable real-time queue system",
     "env": {
         "ROOT_URL": "https://{SET THIS}.herokuapp.com/",
+        "MONGO_URL": "{SET THIS}",
         "ADMIN_PASSWORD": "{SET THIS}",
         "ADMIN_USERNAME": "admin",
         "DEFAULT_MENTOR": "true",
