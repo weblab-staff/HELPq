@@ -4,7 +4,7 @@ Template.leaderboard.onCreated(function () {
   this.rows = new ReactiveVar();
 
   // TODO: Expand to more
-  this.rows.set(10);
+  this.rows.set(14);
 });
 
 Template.leaderboard.helpers({
