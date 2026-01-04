@@ -8,8 +8,8 @@ WORKDIR /app
 COPY . /app
 
 # Install app deps then build server-only bundle
-RUN meteor npm install --production
-RUN meteor build --directory /build --architecture os.linux.x86_64 --server-only
+RUN meteor npm install --production --allow-superuser
+RUN meteor build --directory /build --architecture os.linux.x86_64 --server-only --allow-superuser
 
 # Install node deps for the bundle's server programs
 RUN cd /build/bundle/programs/server && npm install --production
