@@ -1,5 +1,5 @@
 # Stage 1: build Meteor and produce bundle
-FROM node:18-bullseye AS builder
+FROM node:12-bullseye AS builder
 RUN apt-get update && apt-get install -y curl build-essential python3
 # Install Meteor tool
 RUN curl -sL https://install.meteor.com/ | sh
@@ -15,7 +15,7 @@ RUN meteor build --directory /build --architecture os.linux.x86_64 --server-only
 RUN cd /build/bundle/programs/server && npm install --production
 
 # Stage 2: runtime image
-FROM node:18-bullseye
+FROM node:12-bullseye
 WORKDIR /app
 COPY --from=builder /build/bundle /app
 
